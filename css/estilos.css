@@ -1,3 +1,19 @@
 .input-group-text{
     background-color: unset;
 }
+
+.navbar {
+    background-color: #f0ebeb;
+}
+.nav-link {
+    color: rgb(185, 87, 30);
+}
+
+footer {
+    background-color: rgb(185, 87, 30);
+}
+
+.btn {
+    background-color: rgb(185, 87, 30);
+    border-color: rgb(185, 87, 30);
+}
