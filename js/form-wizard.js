@@ -65,6 +65,20 @@ $(document).ready(function(){
     })
 
 
+
+    
+    $('#contact-form').submit(function(event) {
+      // Evitamos que el formulario se envíe y se refresque la página
+      event.preventDefault();
+  
+      // Agregamos el texto y el icono de check al elemento deseado
+      $('#button-form').html('<i class="fas fa-check"></i> Solicitud enviada');
+  
+      // Agregamos una clase para dar estilo al elemento si lo deseamos
+      $('#button-form').addClass('btn-success');
+    });
+
+
        // inicializar el plugin de validación
   $('#msform').validate({
     // configuración de las reglas de validación para cada campo
