@@ -52,12 +52,19 @@ footer {
 }
 
 #button-accordion{
-    color: #b9571e;
-
+    color: black;
+    border-bottom-color: #8d8b8b;
+    border-top-color: #8d8b8b;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
 }
 
 #button-accordion:hover{
-    border-color: #b9571e;
+    border-color: #8d8b8b;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 
 .card-header{
@@ -322,3 +329,18 @@ input[type=checkbox]{
     font-size: 12px;
 }
 
+.card-header {
+    background-color: white;
+    margin: 5px;
+}
+
+
+.card-body {
+    background-color: white;
+    margin: 5px;
+}
+
+#section3 {
+    align-items: center;
+    justify-content: center;
+}
