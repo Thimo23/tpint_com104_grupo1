@@ -44,7 +44,7 @@
                 </ul>
             </div>
         </div>
-        <button type="button" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#login">
+        <button id="button-inicio" type="button" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#login">
             Login
         </button>
 
@@ -150,7 +150,122 @@
       <main>
         <section></section>
         <section></section>
-        <section></section>
+
+        <section id="section3">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 style="margin-top: 15px;" class="h2">Preguntas Frecuentes</h2>
+              <div class="accordion" id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button id="button-accordion" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Pregunta 1
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus iure unde deleniti error quas minus reprehenderit voluptatibus. A quo voluptatem eligendi minima ratione. Exercitationem quos excepturi explicabo, corrupti illum cupiditate.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button id="button-accordion" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Pregunta 2
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel amet ullam veniam sint eligendi natus molestiae corporis, omnis eaque officia vero deleniti, labore deserunt adipisci enim suscipit sequi ea.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button id="button-accordion" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Pregunta 3
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium odio officia impedit ratione error maiores, earum atque? Nisi molestiae tempora beatae distinctio cum dolor laborum maiores expedita culpa eveniet.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 style="margin-top: 15px;" class="h2">Contacto</h2>
+                <form id="contact-form">
+                  <div class="form">
+                  <div class="form-group">
+                  <label for="apellido">Apellido</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fal fa-address-card"></i>
+                      </span>
+                    </div>
+                  <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">@</span>
+                    </div>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fal fa-phone"></i>
+                      </span>
+                    </div>
+                  <input type="number" class="form-control" id="telefono" placeholder="Teléfono">
+                </div>
+                <div class="form-group">
+                  <label for="provincia">Provincia</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fal fa-globe-americas"></i>
+                      </span>
+                    </div>
+                  <select class="form-control" id="provincia">
+                    <option value="Provincia">Buenos Aires</option>
+                    <option value="Provincia">La Pampa</option>
+                    <option value="Provincia">Córdoba</option>
+                    <option value="Provincia">Santa fé</option>
+                    <option value="Provincia">Mendoza</option>
+                    <option value="Provincia">Rio Negro</option>
+                    <option value="Provincia">Entre Rios</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="comentario">Comentario</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fal fa-comment"></i>
+                      </span>
+                    </div>
+                  <textarea class="form-control" id="comentario" rows="3"></textarea>
+                </div>
+                <button id="button-form" type="submit" class="btn btn-primary"><i class="fal fa-paper-plane"></i>
+                  Enviar Consulta</button>
+                </div>
+              </form>
+        </section>
+
         <section></section>
       </main>
 
@@ -179,7 +294,7 @@
   </div>
     </div>
 
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>

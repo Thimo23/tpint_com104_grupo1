@@ -3,17 +3,58 @@
 }
 
 .navbar {
-    background-color: #f0ebeb;
+    background-color: #E8E8E8;
 }
+
 .nav-link {
     color: rgb(185, 87, 30);
 }
 
-footer {
-    background-color: rgb(185, 87, 30);
+.nav-link:hover{
+    color: #8d8b8b ;
 }
 
-.btn {
-    background-color: rgb(185, 87, 30);
-    border-color: rgb(185, 87, 30);
+footer {
+    background-color: #b9571e;
+}
+
+#button-inicio {
+    background-color: #b9571e;
+    border-color: #b9571e;
+}
+
+#button-inicio:hover{
+    background-color: #8d8b8b;
+    border-color: #8d8b8b;
+}
+
+#button-pregunta{
+    margin:5px
+}
+#button-pregunta:hover{
+    border-color: #b9571e;
+}
+
+.h2{
+    display:flex;
+    justify-content: center;
+    margin-bottom:15px;
+}
+
+#button-form{
+    background-color: #b9571e;
+    border-color: #b9571e;
+    margin-top: 10px;
+}
+
+#button-form:hover{
+    border-color: #b9571e;
+}
+
+#button-accordion{
+    color: #b9571e;
+}
+
+#button-accordion:hover{
+    border-color: #b9571e;
 }
