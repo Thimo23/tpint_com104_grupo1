@@ -108,7 +108,7 @@
 
      </nav>
      <header class="row">
-        <div class="col">
+        <div class="col p-0">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -154,10 +154,10 @@
         <section></section>
 
         <section id="section3">
-          <div class="container mt-5">
-            <div class="row">
-              <div class="col-md-6 border-end border-right">
-                <h2 style="color: #b9571e" class="h2">Preguntas Frecuentes</h2>
+          
+            <div class="row whitesmoke">
+              <div class="col-md-6 border-end border-right p-0">
+                <h2 style="color: #b9571e;margin-top: 25px;" class="h2">Preguntas Frecuentes</h2>
                 <div class="accordion" id="accordion">
                   <div class="card">
                     <div class="card-header" id="headingOne">
@@ -221,7 +221,7 @@
                 
               <div class="col-md-6">
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <h2 style="color: #b9571e" class="h2">Contacto</h2>
+                <h2 style="color: #b9571e;margin-top: 25px;" class="h2">Contacto</h2>
                 <form id="contact-form">
                   <div class="form">
                     <div class="form-group">
@@ -298,13 +298,18 @@
               </form>
               </div>
             </div>
-          </div>
+          
         </section>
         <section class="row">
-          <div class="col text-center">
-            <h2>Servicios</h2>
-            <p style="margin-left: 100px; margin-right: 100px;">Nos encargamos de todo el proceso, desde la planificación hasta la entrega y presentación de los productos en tu evento, para que puedas disfrutar de tu evento sin preocupaciones.</p>
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proceso">Hacer pedido</button>
+          <div class="col text-center p-0 border whitesmoke">
+            <div class="servicios">
+              <h2>Servicios</h2>
+              <p style="margin-left: 100px; margin-right: 100px;">Nos encargamos de todo el proceso, desde la planificación hasta la entrega y presentación de los productos en tu evento, para que puedas disfrutar de tu evento sin preocupaciones.</p>
+            </div>
+            <div>
+              <button type="button" id="modal-process" class="btn btn-primary" data-toggle="modal" data-target="#proceso">Hacer pedido</button>
+            </div>   
+          
           </div>
        
         <div class="modal fade" id="proceso" tabindex="-1" role="dialog" aria-hidden="true">

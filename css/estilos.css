@@ -342,3 +342,18 @@ input[type=checkbox]{
 .border-right {
     border-right: 2px solid #000;
 }
+
+.servicios{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#modal-process{
+    margin-bottom: 100px;
+}
+
+.whitesmoke{
+    background-color: whitesmoke;
+}
