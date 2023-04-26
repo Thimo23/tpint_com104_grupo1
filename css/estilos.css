@@ -53,28 +53,25 @@ footer {
 
 #button-accordion{
     color: #b9571e;
+
 }
 
 #button-accordion:hover{
     border-color: #b9571e;
 }
 
-
-
-
-
-
-
-
-html {
-    height: 100%;
+.card-header{
+    padding: 0;
+    margin: 30px;
 }
+
+.accordion{
+    margin-top: 35px;
+}
+
+
 
 /*Background color*/
-#grad1 {
-    
-    
-}
 
 /*form styles*/
 #msform {
@@ -324,3 +321,4 @@ input[type=checkbox]{
 #datos{
     font-size: 12px;
 }
+

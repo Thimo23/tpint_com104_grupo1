@@ -11,12 +11,13 @@
     <body>
 
     <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
+      <nav class="row navbar navbar-light navbar-expand-sm p-0">
+        <div class="col p-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+              
                 <ul style="align-items: center; justify-content: space-between; width: 100%;" class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#inicio">Inicio</a>
@@ -27,11 +28,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#faqs">FAQS</a>
                     </li>
-                    <li>
-                        <a class="navbar-brand " href="#">
-                            <img src="images/logo_empresa.png" alt="Logo" width="150" height="150">
-                        </a>
-                    </li>
+                    <a class="navbar-brand " href="#">
+                      <img src="images/logo_empresa.png" alt="Logo" width="150" height="150">
+                    </a>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
@@ -41,12 +40,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#servicio">Servicio</a>
                     </li>
+                    <li>
+                      <button id="button-inicio" type="button" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#login">
+                        Login
+                    </button>
+                    </li>
                 </ul>
             </div>
         </div>
-        <button id="button-inicio" type="button" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#login">
-            Login
-        </button>
+        
 
         <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -72,7 +74,7 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text">@</span>
                             </div>
-                            <input type="text" id="email" class="form-control" placeholder="user@gmail.com">
+                            <input type="text" id="email-login" class="form-control" placeholder="user@gmail.com">
                           </div>
                         </div>
                         <div class="form-group">
@@ -151,11 +153,11 @@
         <section></section>
         <section></section>
 
-        <section id="section3">
+        <section id="section3" class="border">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mt-2">
               <h2 style="margin-top: 15px;" class="h2">Preguntas Frecuentes</h2>
-              <div class="accordion" id="accordion">
+              <div class="accordion p-2" id="accordion">
                 <div class="card">
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
@@ -165,7 +167,7 @@
                     </h2>
                   </div>
               
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus iure unde deleniti error quas minus reprehenderit voluptatibus. A quo voluptatem eligendi minima ratione. Exercitationem quos excepturi explicabo, corrupti illum cupiditate.
                     </div>
@@ -199,11 +201,26 @@
                     </div>
                   </div>
                 </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button id="button-accordion" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Pregunta 4
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium odio officia impedit ratione error maiores, earum atque? Nisi molestiae tempora beatae distinctio cum dolor laborum maiores expedita culpa eveniet.
+                    </div>
+                  </div>
+                </div>
               </div>
-
+            </div>
+            <div class="col-md-6 mt-2">
               <h2 style="margin-top: 15px;" class="h2">Contacto</h2>
                 <form id="contact-form">
-                  <div class="form">
+                  <div class="form p-2">
                   <div class="form-group">
                   <label for="apellido">Apellido</label>
                   <div class="input-group">
@@ -264,9 +281,132 @@
                   Enviar Consulta</button>
                 </div>
               </form>
+            </div>
+            
         </section>
+        <section class="row">
+          <div class="col text-center">
+            <h2>Servicios</h2>
+            <p style="margin-left: 100px; margin-right: 100px;">Nos encargamos de todo el proceso, desde la planificación hasta la entrega y presentación de los productos en tu evento, para que puedas disfrutar de tu evento sin preocupaciones.</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#proceso">Hacer pedido</button>
+          </div>
+       
+        <div class="modal fade" id="proceso" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <!--Contenido del form-wizard-->
 
-        <section></section>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+              <script src="js/form-wizard.js"></script>
+              
+              <div class="container-fluid p-0" id="grad1">
+                <div class="row justify-content-center mt-0">
+                    <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2">
+                        <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                            <h2><strong>Realiza tu pedido con nosotros!</strong></h2>
+                            <p>Completa los pasos para que nos comuniquemos con vos.</p>
+                            <div class="row">
+                                <div class="col-md-12 mx-0">
+                                    <form id="msform">
+                                        <!-- progressbar -->
+                                        <ul id="progressbar">
+                                            <li class="active" id="account"><strong>Datos personales</strong></li>
+                                            <li id="type-event"><strong>Tipo de evento</strong></li>
+                                            <li id="preferences"><strong>Preferencias</strong></li>
+                                            <li id="confirm"><strong>Finalizar</strong></li>
+                                        </ul>
+                                        <!-- fieldsets -->
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <h2 class="fs-title">Información de contacto</h2>
+                                                
+                                                <input type="email" name="email" class="form-control" placeholder="Email" required/>
+                                               
+                                                
+                                                <input type="text" name="name" placeholder="Nombre y Apellido" required/>
+                                               
+                                              
+                                                <input type="number" name="tel" placeholder="Teléfono" required/> 
+                                             
+                                                
+                                                <textarea name="textarea" rows="5" cols="10" placeholder="Comentarios..."></textarea>
+                                            </div>
+                                            <input type="button" id="button-1" name="next" class="next action-button" value="Siguiente"/>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <h2 class="fs-title mb-4">Información del evento</h2>
+                                                <select name="select-place" class="form-control mb-4">
+                                                  <option selected>Lugar de realización</option>
+                                                  <option>Buenos Aires</option>
+                                                  <option>Córdoba</option>
+                                                  <option>Misiones</option>
+                                                  <option>Otra provincia</option>
+                                                </select>
+                                                <select name="select" class="form-control mt-2">
+                                                  <option selected>Seleccione el tipo de evento</option>
+                                                  <option>Boda</option>
+                                                  <option>Cumpleaños</option>
+                                                  <option>Reunión</option>
+                                                  <option>Otro</option>
+                                                </select>
+                                                <div class="text-left mt-4">
+                                                  Fecha del evento<input type="date" name="date" class="form-control"/>
+                                                </div>     
+                                                <input type="number" name="cant" placeholder="Cantidad de invitados"/>
+                                                
+                                            </div>
+                                            <input type="button" id="previous" name="previous" class="previous action-button-previous" value="Anterior"/>
+                                            <input type="button" id="next" name="next" class="next action-button" value="Siguiente"/>
+                                        </fieldset>
+                                        <fieldset>
+                                          <div class="form-group">
+                                            <h2 class="fs-title mb-4">Preferencias</h2>
+                                            <input class="mt-2" type="number" name="price" placeholder="Presupuesto"/>
+                                            
+                                            <div class="text-left mt-1 d-flex mb-2">
+                                              Reestricciones alimentarias?
+                                            </div>
+                                            <div class="d-flex m-0">  
+                                              Sí<input type="radio" name="restriccion" id="checkbox-1" class="form-check m-0"/>
+                                              No<input type="radio" name="restriccion" id="checkbox-2" class="form-check m-0"/>
+                                            </div>  
+                                             
+                                            <p id="datos" class="text-muted mt-4 text-sm"> A partir de estos datos te personalizaremos un menú para que puedas seleccionar en función de tu presupuesto e invitados</p>
+                                        </div>
+                                            <input type="button" name="previous" class="previous action-button-previous" value="Anterior"/>
+                                            <input type="button" name="make_payment" class="next action-button" value="Confirmar"/>
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-group">
+                                                <h2 class="fs-title text-center">Solictud completada !</h2>
+                                                <br><br>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-3">
+                                                        <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image">
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-7 text-center">
+                                                        <h5>Muy pronto nos contactaremos con vos por via email y/o teléfono.</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        </section>
       </main>
 
       <footer class="row">
@@ -295,7 +435,6 @@
     </div>
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     </body>
