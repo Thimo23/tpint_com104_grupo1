@@ -77,7 +77,6 @@ footer {
 }
 
 
-
 /*Background color*/
 
 /*form styles*/
@@ -338,4 +337,8 @@ input[type=checkbox]{
 .card-body {
     background-color: white;
     margin: 5px;
+}
+
+.border-right {
+    border-right: 2px solid #000;
 }
